@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Java Script</title>
 </head>
+<script src="/JavaScript/script.js">
+</script>
 <body>
-    <div>
-        <h1>Lista de Tarefas</h1>
-        <button>Entrar</button>
+    <div class="principal">
+        <header class="cabecalho">
+            <h1>Lista de Tarefas</h1>
+            <h3>Adicione suas tarefas!</h3>
+            <input type="text" id="mensagem" placeholder="Digite sua mensagem..">
+        
+
+            <div class="botoes">
+                <button id="btn01" onclick="mostratxt(1)" ondragenter="mostratext(1)">Adicionar tarefas</button>
+                <button id="btn02" onclick="mostratxt(2)">Remover Tarefa</button>
+            </div>
+            
+            <p id="text01"></p>
+            <p id="text02"></p>
+        </header>
     </div>
-    
 </body>
+
+
 </html>
